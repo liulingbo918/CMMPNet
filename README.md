@@ -27,9 +27,9 @@ tqdm
 
 ## Dataset Preprocessing
 download the following datasets and put them into the folder  ```dataset/```.
-- BJRoad: The original dataset (including satellite images and vehicle trajectories) can be requested from the author of [CVPR 2019 paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Leveraging_Crowdsourced_GPS_Data_for_Road_Extraction_From_Aerial_Imagery_CVPR_2019_paper.pdf).  Here we provide the data-augmented satellite images and trajectory heatmaps used in our work.  [Google.Drive](https://drive.google.com/file/d/1LwTn8_wpsLRBuYW7w6pmxSIhdVNGcze5/view?usp=sharing)   [BaiduYun, password：hiwv](https://pan.baidu.com/s/1kfbw0SKoQqNoG08mM-KGMA)
-- Porto: This dataset contains  6,048 pairs of satellite images and trajectory heatmaps with a resolution of 512*512.  [Google.Drive](https://drive.google.com/file/d/1L3uqySCaIwoa-U22LTqKRemxlHhfKZL7/view?usp=sharing)   [BaiduYun, password：ffia](https://pan.baidu.com/s/1_mkVOnoTr_wxrK00t3Ac5Q)
-- TLCGIS: This is a  road extraction dataset with 5,860 pairs of satellite images and Lidar images.  Their resolution is 500*500.  [Download](  http://ww2.cs.fsu.edu/~parajuli/datasets/fusion_lidar_images_sigspatial18.zip)
+- BJRoad: The original dataset (including satellite images and vehicle trajectories) can be requested from the author of [CVPR2019 paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Leveraging_Crowdsourced_GPS_Data_for_Road_Extraction_From_Aerial_Imagery_CVPR_2019_paper.pdf).  Here we provide the data-augmented satellite images and trajectory heatmaps used in our work.  \[[Google.Drive](https://drive.google.com/file/d/1LwTn8_wpsLRBuYW7w6pmxSIhdVNGcze5/view?usp=sharing)\]   \[[BaiduYun, password：hiwv](https://pan.baidu.com/s/1kfbw0SKoQqNoG08mM-KGMA)\]
+- Porto: This dataset contains 6,048 pairs of satellite images and trajectory heatmaps with a resolution of 512*512.  \[[Google.Drive](https://drive.google.com/file/d/1L3uqySCaIwoa-U22LTqKRemxlHhfKZL7/view?usp=sharing)\]   \[[BaiduYun, password：ffia](https://pan.baidu.com/s/1_mkVOnoTr_wxrK00t3Ac5Q)\]
+- TLCGIS: This is a  road extraction dataset with 5,860 pairs of satellite images and Lidar images. Their resolution is 500*500.  \[[Download](  http://ww2.cs.fsu.edu/~parajuli/datasets/fusion_lidar_images_sigspatial18.zip)\]
 
 
 
@@ -45,6 +45,6 @@ sh train_val_test_Porto.sh
 sh train_val_test_TLCGIS.sh
 ```
 ## Notes
-1)  In the [code](https://github.com/suniique/Leveraging-Crowdsourced-GPS-Data-for-Road-Extraction-from-Aerial-Imagery/blob/master/framework.py#L106) of the [CVPR 2019 paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Leveraging_Crowdsourced_GPS_Data_for_Road_Extraction_From_Aerial_Imagery_CVPR_2019_paper.pdf), average IoU is the mean of the IoU of all batches. For a fair comparison, we follow this work to compute the average IoU in our paper. However, more strictly, average_iou should be the mean of the IoU of all samples. So I recommend using global IoU.
+1)  In the [source code](https://github.com/suniique/Leveraging-Crowdsourced-GPS-Data-for-Road-Extraction-from-Aerial-Imagery/blob/master/framework.py#L106) of the [CVPR2019 paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Leveraging_Crowdsourced_GPS_Data_for_Road_Extraction_From_Aerial_Imagery_CVPR_2019_paper.pdf), average IoU is the mean of the IoU of all batches. For a fair comparison, we follow this work to compute the average IoU in our paper. However, more strictly, average_iou should be the mean of the IoU of all samples. So I recommend using global IoU.
 2) In our experiments, we did not use data augmentation for Porto and TLCGIS. Their performance can be further improved when using data augmentation.
 

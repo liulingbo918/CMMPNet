@@ -28,7 +28,8 @@ tqdm
 ## Dataset Preprocessing
 download the following datasets and put them into the folder  ```dataset/```.
 - BJRoad: The original dataset (including satellite images and vehicle trajectories) can be requested from the author of [CVPR2019 paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Leveraging_Crowdsourced_GPS_Data_for_Road_Extraction_From_Aerial_Imagery_CVPR_2019_paper.pdf).  Here we provide the data-augmented satellite images and trajectory heatmaps used in our work.  \[[Google.Drive](https://drive.google.com/file/d/1LwTn8_wpsLRBuYW7w6pmxSIhdVNGcze5/view?usp=sharing)\]   \[[BaiduYun, password：hiwv](https://pan.baidu.com/s/1kfbw0SKoQqNoG08mM-KGMA)\]
-- Porto: This dataset contains 6,048 pairs of satellite images and trajectory heatmaps with a resolution of 512*512.  \[[Google.Drive](https://drive.google.com/file/d/1L3uqySCaIwoa-U22LTqKRemxlHhfKZL7/view?usp=sharing)\]   \[[BaiduYun, password：ffia](https://pan.baidu.com/s/1_mkVOnoTr_wxrK00t3Ac5Q)\]
+- Porto: This dataset contains 6,048 pairs of satellite images and trajectory heatmaps with a resolution of 512*512. We conduct five-fold
+cross-validation experiments on this dataset. \[[Google.Drive](https://drive.google.com/file/d/1L3uqySCaIwoa-U22LTqKRemxlHhfKZL7/view?usp=sharing)\]   \[[BaiduYun, password：ffia](https://pan.baidu.com/s/1_mkVOnoTr_wxrK00t3Ac5Q)\]
 - TLCGIS: This is a  road extraction dataset with 5,860 pairs of satellite images and Lidar images. Their resolution is 500*500.  \[[Download](  http://ww2.cs.fsu.edu/~parajuli/datasets/fusion_lidar_images_sigspatial18.zip)\]
 
 

@@ -5,7 +5,7 @@ python main.py \
         --epochs 30 \
         --dataset "BJRoad" \
         --sat_dir "dataset/BJRoad/train_val/image" \
-	      --mask_dir "dataset/BJRoad//train_val/mask" \
+	--mask_dir "dataset/BJRoad//train_val/mask" \
         --gps_dir "dataset/BJRoad/train_val/gps" \
         --test_sat_dir "dataset/BJRoad/test/image" \
         --test_mask_dir "dataset/BJRoad/test/mask" \

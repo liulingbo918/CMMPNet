@@ -32,7 +32,7 @@ download the following datasets and put them into the folder  ```dataset/```.
 - Porto: This dataset contains 6,048 pairs of satellite images and trajectory heatmaps with a resolution of 512*512. We conduct five-fold
 cross-validation experiments on this dataset. \[[Google.Drive](https://drive.google.com/file/d/1L3uqySCaIwoa-U22LTqKRemxlHhfKZL7/view?usp=sharing)\]   \[[BaiduYun, password：ffia](https://pan.baidu.com/s/1_mkVOnoTr_wxrK00t3Ac5Q)\]
 
-- TLCGIS: This is a  road extraction dataset with 5,860 pairs of satellite images and Lidar images. Their resolution is 500*500.  \[[Download](  http://ww2.cs.fsu.edu/~parajuli/datasets/fusion_lidar_images_sigspatial18.zip)\]
+- TLCGIS: This is a  road extraction dataset with 5,860 pairs of satellite images and Lidar images. Their resolution is 500*500. In this dataset, the label of foreground road is 0. \[[Download](  http://ww2.cs.fsu.edu/~parajuli/datasets/fusion_lidar_images_sigspatial18.zip)\]
 
 
 

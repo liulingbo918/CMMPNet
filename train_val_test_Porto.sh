@@ -1,0 +1,12 @@
+python main.py \
+	--model CMMPNet \
+        --batch_size 4 \
+        --gpu_ids 0,1 \
+        --epochs 50 \
+        --dataset "Porto_5" \
+        --split_train_val_test "dataset/porto_dataset/split_5" \
+        --sat_dir "dataset/porto_dataset/rgb" \
+        --mask_dir "dataset/porto_dataset/mask" \
+        --lidar_dir "dataset/porto_dataset/gps" \
+        --weight_save_dir 'save_model/' \
+        --lr 1e-4 

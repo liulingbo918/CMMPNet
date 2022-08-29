@@ -50,5 +50,5 @@ sh train_val_test_TLCGIS.sh
 ## Notes
 1)  In the [source code](https://github.com/suniique/Leveraging-Crowdsourced-GPS-Data-for-Road-Extraction-from-Aerial-Imagery/blob/master/framework.py#L106) of the [CVPR2019 paper](https://openaccess.thecvf.com/content_CVPR_2019/papers/Sun_Leveraging_Crowdsourced_GPS_Data_for_Road_Extraction_From_Aerial_Imagery_CVPR_2019_paper.pdf), average IoU is the mean of the IoU of all batches (2 GPUs, 4 samples/GPU). For a fair comparison, we follow this work to compute the average IoU in our paper. However, more strictly, average_iou should be the mean of the IoU of all samples. So I recommend using global IoU.
 
-2) In our experiments, we did not use data augmentation for Porto and TLCGIS. Their performance can be further improved when using data augmentation (i.e., setting the parameter [randomize](https://github.com/liulingbo918/CMMPNet/blob/main/utils/data_loader.py#L10) to True).
+2) In our experiments, we did not use data augmentation for Porto and TLCGIS. Their performance can be further improved when using data augmentation (i.e., setting the parameter [randomize](https://github.com/liulingbo918/CMMPNet/blob/main/utils/datasets.py#L57) to True).
 
